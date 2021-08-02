@@ -5,15 +5,6 @@
 	id="WebApp_ID" version="3.1">
 
 	<display-name>ERS</display-name>
-	
-	<welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
 
 	<servlet>
 		<servlet-name>EmployeeLoginServlet</servlet-name>
@@ -76,7 +67,7 @@
 	</servlet-mapping>
 
 	<welcome-file-list>
-		<welcome-file>/employeeLogin.html</welcome-file>
+		<welcome-file>/employeeLogin.jsp</welcome-file>
 	</welcome-file-list>
 
 	<error-page>
@@ -85,10 +76,6 @@
 	</error-page>
 
 	<!-- Exclude support files from running in Dispatcher for HTTP request -->
-        <servlet-mapping>
-		<servlet-name>default</servlet-name>
-		<url-pattern>*.html</url-pattern>
-	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.css</url-pattern>
